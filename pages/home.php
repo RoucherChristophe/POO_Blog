@@ -1,7 +1,7 @@
 
 <?php 
-// on récupère tous les articles que l'on stock dans '$post', et on donne en 2e parametre la classe à charger
-foreach ($db->query('SELECT * FROM articles', 'App\Table\Article') as $post):
+// on récupère tous les articles que l'on stock dans '$post'
+foreach (\App\Table\Article::getLast() as $post):
 ?>
 <!--on fait un echo de '$post' et des variables inconnues 'url' et 'extrait', à voir dans 'Article.php' -->
   <h2><a href="<?= $post->url ?>"><?= $post->titre; ?></a></h2>

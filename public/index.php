@@ -16,10 +16,6 @@ if (isset($_GET['p'])) {
   $p = 'home';
 }
 
-// initialisation des objets, connexion BDD
-$db = new App\Database('grafikart-blog');
-
-
 
 ob_start(); //permet de stocker dans une variable tout ce qui est affiché, avec 'ob_get_clean()'
 

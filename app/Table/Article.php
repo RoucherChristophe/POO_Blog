@@ -2,7 +2,17 @@
 
 namespace App\Table;
 
+use App\App;
+
 class Article{
+
+
+  // fonction static pour récupérer les dernier articles, et on donne en 2e parametre la classe 'Article' à charger
+  public static function getLast(){
+
+    return App::getDB()->query('SELECT * FROM articles' , __CLASS__);
+
+  }
 
   // 'fonction magique' qui permet de définir des variables inconnues 
   public function __get($key){
