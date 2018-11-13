@@ -1,0 +1,30 @@
+Architecture du projet
+
+
+Le dossier app:
+
+contient toutes les classes de l'application, dans le namespace 'app'
+
+Le dossier pages:
+
+contient les template HTML
+
+Le dossier public:
+
+contient tous les fichiers publics: css, js, racine, 
+
+
+
+twitter bootstrap:
+
+https://getbootstrap.com/ -> example -> starter template
+
+https://www.bootstrapcdn.com/
+
+
+Connexion BDD avec PDO:
+
+info sur GOOGLE: pdo php.net
+
+
+fillerama : lorem ipsum
